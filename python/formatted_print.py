@@ -2,7 +2,12 @@
 """
 Date        : 12/30/2020
 Author      : tphilip
-Description : Format the print calls
+Description : Formats the print calls. 
+Automatically aligns the displayed text by calculating the length of the longest "Description" and adjusts the alignment accordingly for all the other "Descriptions"
+Output      : 
+Name of the person : James
+Age                : 34
+Location           : Europe
 """
 
 # Pre-requisite : Python 3.6+
@@ -26,20 +31,18 @@ def pretty_print(passed_input):
         if length_description < len(description):
             length_description = len(description)
 
-    fixed_spacing = length_description + 1
-
     for description, value, *_ in passed_input:
-        description_buffer = [' '] * fixed_spacing
+        description_buffer = [' '] * length_description
 
         for index, letter in enumerate(description):
             description_buffer[index] = letter
 
         final_description = ''.join(map(str, description_buffer))
-        print(f"{final_description}: {value}")
+        print(f"{final_description} : {value}")
 
 
-if __name__ == "__main__":
 # This section is added to show the usage of "pretty_print()"
+if __name__ == "__main__":
     print(f"{FILENAME} is called directly. Please use import instead.")
     # FUNCTION CALL
     print_input: list = []
@@ -49,5 +52,3 @@ if __name__ == "__main__":
     print_input.append(("Age", 34))
     print_input.append(("Location", "Europe"))
     pretty_print(print_input)
-else:
-    print(f"{FILENAME} has been imported")
