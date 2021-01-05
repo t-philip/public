@@ -39,7 +39,7 @@ def pretty_print(passed_input):
 
 
 if __name__ == "__main__":
-# This section is added to show the usage of "prett_print()"
+# This section is added to show the usage of "pretty_print()"
     print(f"{FILENAME} is called directly. Please use import instead.")
     # FUNCTION CALL
     print_input: list = []
