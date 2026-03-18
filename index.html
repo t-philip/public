@@ -3,35 +3,206 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professional Landing Page</title>
+    <title>t-philip Public Repository</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-        header { background: #4CAF50; color: white; padding: 10px 20px; text-align: center; }
-        main { padding: 20px; }
-        footer { text-align: center; padding: 10px; background: #f1f1f1; position: absolute; bottom: 0; width: 100%; }
-        ul { list-style-type: none; padding: 0; }
-        li { padding: 8px; margin: 4px; background-color: #f9f9f9; border: 1px solid #ddd; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+        }
+        
+        header nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+        
+        header nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: opacity 0.3s;
+        }
+        
+        header nav a:hover {
+            opacity: 0.8;
+        }
+        
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        section {
+            background: white;
+            margin: 2rem 0;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        section h1 {
+            color: #667eea;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        section h2 {
+            color: #667eea;
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 0.5rem;
+        }
+        
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+        
+        .item {
+            background: #f9f9f9;
+            padding: 1.5rem;
+            border-left: 4px solid #667eea;
+            border-radius: 4px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.2);
+        }
+        
+        .item a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .item a:hover {
+            text-decoration: underline;
+        }
+        
+        .folder-icon::before {
+            content: "📁 ";
+        }
+        
+        .file-icon::before {
+            content: "📄 ";
+        }
+        
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        @media (max-width: 768px) {
+            section h1 {
+                font-size: 1.8rem;
+            }
+            
+            section h2 {
+                font-size: 1.3rem;
+            }
+            
+            header nav ul {
+                gap: 1rem;
+            }
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to My Professional Landing Page</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">🏠 Home</a></li>
+                <li><a href="#folders">📁 Folders</a></li>
+                <li><a href="#files">📄 Files</a></li>
+                <li><a href="https://github.com/t-philip/public">🔗 GitHub</a></li>
+            </ul>
+        </nav>
     </header>
+    
     <main>
-        <h2>Folders and Files</h2>
-        <ul>
-            <!-- Folders and files will be dynamically listed here -->
-            <li>Folder 1
-                <ul><li>File 1.1</li><li>File 1.2</li></ul>
-            </li>
-            <li>Folder 2
-                <ul><li>File 2.1</li><li>File 2.2</li></ul>
-            </li>
-            <li>File 3</li>
-        </ul>
+        <section id="home">
+            <h1>Welcome to t-philip/public</h1>
+            <p>A comprehensive repository featuring various projects, documentation, and resources organized for easy navigation and access.</p>
+        </section>
+        
+        <section id="folders">
+            <h2>📁 Folders</h2>
+            <div class="container">
+                <div class="item">
+                    <a href="docs/" class="folder-icon">docs</a>
+                    <p>Documentation and guides</p>
+                </div>
+                <div class="item">
+                    <a href="hosts/" class="folder-icon">hosts</a>
+                    <p>Host configuration files</p>
+                </div>
+                <div class="item">
+                    <a href="images/" class="folder-icon">images</a>
+                    <p>Images and visual assets</p>
+                </div>
+                <div class="item">
+                    <a href="network/" class="folder-icon">network</a>
+                    <p>Network configurations (EVE-NG)</p>
+                </div>
+                <div class="item">
+                    <a href="python/" class="folder-icon">python</a>
+                    <p>Python scripts and projects</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="files">
+            <h2>📄 Files</h2>
+            <div class="container">
+                <div class="item">
+                    <a href="README.md" class="file-icon">README.md</a>
+                    <p>Project overview and information</p>
+                </div>
+                <div class="item">
+                    <a href="LICENSE" class="file-icon">LICENSE</a>
+                    <p>License information</p>
+                </div>
+                <div class="item">
+                    <a href="claude.md" class="file-icon">claude.md</a>
+                    <p>Claude AI documentation</p>
+                </div>
+            </div>
+        </section>
     </main>
+    
     <footer>
-        <p>&copy; 2026 by t-philip. All rights reserved.</p>
+        <p>&copy; 2026 t-philip. All Rights Reserved.</p>
     </footer>
 </body>
 </html>
