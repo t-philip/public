@@ -11,6 +11,8 @@ Example : (^|.)domain(|.*).com(|.$) will block spotify.com, www.spotify.com, ope
 -*The list will be updated as and when I discover more domains*  
 
 ### Block malware domains.
-### Filename : malware_domains
+- Filename : malware_domains
+- Filename : online_streaming_domains
+
 Original Source: https://mirror1.malwaredomains.com/files/justdomains
 Original Source is no longer available, hence this file had been created.
