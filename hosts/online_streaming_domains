@@ -4,8 +4,8 @@
 # Date: 12 September 2020 18:00:00 (CET)
 # Extensions added to this file: online music & video streaming
 #
-# Fetch the latest version of this file: https://raw.githubusercontent.com/t-philip/hosts/master/hosts
-# Project home page: https://github.com/t-philip/hosts
+# Fetch the latest version of this file: https://raw.githubusercontent.com/t-philip/public/main/hosts/online_streaming_domains
+# Project home page: https://github.com/t-philip/public
 #
 # Additional Information : In case you want to block all possible sub-domains and directories for 'domain.com' then use RegEx : (^|.)domain.com(|.$)
 # In case you also want to block domain[any number of characters].com then use RegEx: (^|.)domain(|.*).com(|.$)
@@ -13,7 +13,7 @@
 # Example : (^|.)spotify.com(|.$) will block spotify.com, www.spotify.com, open.spotify.com, www.spotify.com/be-fr/, guc-dealer.spotify.com
 # Example : (^|.)domain(|.*).com(|.$) will block spotify.com, www.spotify.com, open.spotify.com, www.spotify.com/be-fr/, guc-dealer.spotify.com, sp-bootstrap.spotifycdn.com
 #
-# ===============================================================
+# =================================================================
 
 # Start 
 0.0.0.0 8tracks.com
