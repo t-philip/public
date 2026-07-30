@@ -1,0 +1,51 @@
+name: Suggest a domain to block
+description: A malware, phishing, scam or streaming domain that should be added to a list
+title: "[Add]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping keep the lists useful. One issue per domain is easiest to
+        review, but a related batch in a single issue is fine too.
+
+  - type: input
+    id: domain
+    attributes:
+      label: Domain(s)
+      description: Just the hostname — no `http://`, no `0.0.0.0` prefix.
+      placeholder: ads.example.com
+    validations:
+      required: true
+
+  - type: dropdown
+    id: list
+    attributes:
+      label: Which list?
+      options:
+        - malware_domains
+        - online_streaming_domains
+        - Not sure
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Why should it be blocked?
+      description: |
+        What does it actually do? A link to a scanner result (VirusTotal, URLhaus,
+        abuse.ch) or a short description of what you observed is ideal.
+      placeholder: Serves a fake login page for a well-known bank — VirusTotal flags it 12/94.
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I checked the domain isn't already in the list.
+          required: true
+        - label: This is a domain, not an IP address or a URL path.
+          required: true

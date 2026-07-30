@@ -1,0 +1,50 @@
+name: Report a false positive
+description: A legitimate domain is on a list and is breaking something for you
+title: "[False positive]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        False positives matter more than missing entries — a blocklist that breaks
+        legitimate sites gets uninstalled. Please report these.
+
+  - type: input
+    id: domain
+    attributes:
+      label: Domain that shouldn't be blocked
+      placeholder: cdn.example.com
+    validations:
+      required: true
+
+  - type: dropdown
+    id: list
+    attributes:
+      label: Which list is it in?
+      options:
+        - malware_domains
+        - online_streaming_domains
+        - Not sure
+    validations:
+      required: true
+
+  - type: textarea
+    id: breakage
+    attributes:
+      label: What breaks when it's blocked?
+      description: Which site or app, and what fails — blank page, missing images, login loop?
+      placeholder: Images don't load on example.com; the page works with the list disabled.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: blocker
+    attributes:
+      label: What are you using?
+      options:
+        - Pi-hole
+        - AdGuard Home
+        - A hosts file directly
+        - Something else
+    validations:
+      required: false

@@ -53,6 +53,19 @@ raw paths (`/t-philip/public/main/hosts/…`), so **existing Pi-hole and AdGuard
 subscriptions continue to work unchanged**. That alias depends on no new repository
 claiming the old name, so please update to the `/blocklists/` URLs above when convenient.
 
+## Reporting issues
+
+Found a bug, a mistake in the documentation, or want to suggest something?
+**[Open an issue](https://github.com/t-philip/blocklists/issues/new/choose)** — pick a
+template and it will ask for the details that actually help.
+
+Two kinds of report are especially welcome:
+
+- **A domain that should be blocked** — malware, phishing, scam or streaming.
+- **A false positive** — a legitimate domain on one of these lists that is
+  breaking something for you. These matter more than missing entries: a list
+  that breaks real sites gets uninstalled, so please report them.
+
 ---
 
 Lists are updated as and when more domains are found.

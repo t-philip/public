@@ -1,0 +1,15 @@
+name: Question or something else
+description: Setup help, an idea, or anything that isn't a domain report
+title: "[Question]: "
+labels: ["question"]
+body:
+  - type: textarea
+    id: body
+    attributes:
+      label: What's on your mind?
+      description: |
+        Setup problems, an idea for a new list, or a question about how these work —
+        all welcome. The README covers adding lists to Pi-hole and AdGuard Home,
+        and blocking whole domains with a regex, if that's what you're after.
+    validations:
+      required: true
