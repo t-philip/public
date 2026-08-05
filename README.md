@@ -53,6 +53,14 @@ raw paths (`/t-philip/public/main/hosts/…`), so **existing Pi-hole and AdGuard
 subscriptions continue to work unchanged**. That alias depends on no new repository
 claiming the old name, so please update to the `/blocklists/` URLs above when convenient.
 
+## Design
+
+[docs/DESIGN_SPEC.md](docs/DESIGN_SPEC.md) explains where each list comes from, why
+hosts format specifically matters here, and states honestly what "verified" can mean
+for a list of domain names rather than a piece of software.
+
+---
+
 ## Reporting issues
 
 Found a bug, a mistake in the documentation, or want to suggest something?
