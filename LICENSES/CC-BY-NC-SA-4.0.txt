@@ -1,0 +1,49 @@
+Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International
+(CC BY-NC-SA 4.0)
+
+Applies to: hosts/malware_domains
+
+Human-readable summary (this summary is not a substitute for the license):
+https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+Full legal code:
+https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode
+
+You are free to:
+  - Share — copy and redistribute this list in any medium or format
+  - Adapt — remix, transform, and build upon this list
+
+Under the following terms:
+  - Attribution — You must give appropriate credit to T. Philip
+    (https://github.com/t-philip), provide a link to this license, and
+    indicate if changes were made.
+  - NonCommercial — You may not use this list for commercial purposes.
+  - ShareAlike — If you remix, transform, or build upon this list, you must
+    distribute your contributions under the same license as the original.
+
+No additional restrictions — you may not apply legal terms or technological
+measures that legally restrict others from doing anything the license
+permits.
+
+---
+
+Why this file is licensed differently from the rest of this author's public
+repositories (which use AGPL-3.0, a software license permitting commercial
+use):
+
+hosts/malware_domains traces back to mirror1.malwaredomains.com/files/justdomains,
+a DNS-BH / malwaredomains.com (RiskAnalytics) data feed that is no longer
+online. That project's own published terms stated the feed was "provided for
+free for noncommercial use," and that "any use of this list commercially is
+strictly prohibited without prior approval." This license preserves that
+restriction for the compiled list, since a large majority of its entries
+originate from that source. It does not apply to any other file in this
+repository — see hosts/online_streaming_domains, which is an independent
+compilation by T. Philip and is licensed separately (see
+LICENSES/CC-BY-SA-4.0.txt).
+
+See docs/DESIGN_SPEC.md §5 for a fuller discussion, including an honest note
+that a bare list of domain names is arguably a list of facts rather than a
+creative work under most jurisdictions' copyright law, so this license
+should be read as a clearly stated request and intent rather than a settled
+legal position.

@@ -1,0 +1,35 @@
+Creative Commons Attribution-ShareAlike 4.0 International
+(CC BY-SA 4.0)
+
+Applies to: hosts/online_streaming_domains
+
+Human-readable summary (this summary is not a substitute for the license):
+https://creativecommons.org/licenses/by-sa/4.0/
+
+Full legal code:
+https://creativecommons.org/licenses/by-sa/4.0/legalcode
+
+You are free to:
+  - Share — copy and redistribute this list in any medium or format,
+    including commercially
+  - Adapt — remix, transform, and build upon this list, including
+    commercially
+
+Under the following terms:
+  - Attribution — You must give appropriate credit to T. Philip
+    (https://github.com/t-philip), provide a link to this license, and
+    indicate if changes were made.
+  - ShareAlike — If you remix, transform, or build upon this list, you must
+    distribute your contributions under the same license as the original.
+
+No additional restrictions — you may not apply legal terms or technological
+measures that legally restrict others from doing anything the license
+permits.
+
+---
+
+hosts/online_streaming_domains is an independent, hand-curated compilation
+by T. Philip with no third-party source restriction, so commercial use is
+permitted here — unlike hosts/malware_domains, which carries a
+non-commercial restriction inherited from its upstream source (see
+LICENSES/CC-BY-NC-SA-4.0.txt).

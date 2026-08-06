@@ -6,8 +6,9 @@
 **Status:** Reconciled against the shipped content. Describes each list as it actually
 is, including a real format defect found while writing this document and fixed before
 this spec's first release.
-**Licence:** GPL-3.0 (see §5 for an honest note on what that does and doesn't mean for
-a list of domain names).
+**Licence:** Split by file — see §5. Not GPL-3.0/AGPL-3.0 like this author's code
+repositories; changed 2026-08-06 after auditing where `malware_domains` actually came
+from (see §5.1).
 
 ---
 
@@ -106,17 +107,45 @@ blindly or ignored.
 
 ## 5. Licensing note — stated honestly
 
-The repository carries GPL-3.0, consistent with every other public repo in this
-profile. Worth being direct about what that means here: **GPL-3.0 is a software
-copyright licence, and a bare list of facts (domain names) is not obviously the kind
-of creative work copyright protects in the first place** — in most jurisdictions, a
-factual list has thin-to-no copyright on its own. Applying GPL-3.0 is a statement of
-the author's preference and the terms under which he offers the *compiled, maintained
-list* (attribution requested, share-alike if redistributed), not a claim that the
-underlying domain names themselves are original creative work. Practically: credit
-the author if you use or share these, per the README, and don't expect a court
-citation on the underlying legal question — treat it as intent, honestly stated,
-rather than settled law.
+### 5.1 The repository does not carry one licence — it carries two, by file
+
+Until 2026-08-06 this repository stated GPL-3.0, consistent with every other public
+repo in this profile. That was reconsidered specifically for `malware_domains`, whose
+provenance (§2.1, §9) makes GPL-3.0 the wrong choice: it traces back to
+`mirror1.malwaredomains.com/files/justdomains`, a DNS-BH / malwaredomains.com
+(RiskAnalytics) feed. Before that source went offline, its own published terms stated
+the feed was "provided for free for noncommercial use," and that "any use of this list
+commercially is strictly prohibited without prior approval." GPL-3.0 explicitly
+*permits* commercial use — directly contradicting the terms the data was originally
+offered under. Publishing it under GPL-3.0 (or AGPL-3.0, which has the same commercial-
+use permission) would have been applying a more permissive licence than the author has
+the standing to grant for the majority of this file's content.
+
+**Fix.** `malware_domains` is now licensed [CC BY-NC-SA 4.0](../LICENSES/CC-BY-NC-SA-4.0.txt),
+preserving the noncommercial restriction the source data actually came with.
+`online_streaming_domains` (§2.2) has no such upstream restriction — it's an
+independent compilation — so it is licensed separately, under
+[CC BY-SA 4.0](../LICENSES/CC-BY-SA-4.0.txt), which permits commercial use. See the
+root [LICENSE](../LICENSE) file for the split and [README.md](../README.md)'s lists
+table for the per-file licence. Software-copyright licences (GPL/AGPL) were dropped in
+favour of Creative Commons licences generally, since §5.2 below applies to *both*
+files, not only the one with the inherited restriction.
+
+### 5.2 What copyright can even claim over a list of domain names
+
+Worth being direct about what any licence choice means here, independent of §5.1:
+**a bare list of facts (domain names) is not obviously the kind of creative work
+copyright protects in the first place** — in most jurisdictions, a factual list has
+thin-to-no copyright on its own. Applying a licence at all is a statement of the
+author's preference and the terms under which he offers the *compiled, maintained
+list* (attribution requested, share-alike if redistributed, and — for
+`malware_domains` — noncommercial), not a claim that the underlying domain names
+themselves are original creative work. Practically: credit the author if you use or
+share these, per the README and each file's licence, and don't expect a court citation
+on the underlying legal question — treat it as intent, honestly stated, rather than
+settled law. This reasoning does not weaken the noncommercial term in §5.1: even where
+copyright is thin, the terms the original source published were explicit, and this
+repository chooses to honour rather than route around them.
 
 ---
 
@@ -231,10 +260,15 @@ anyone browsing the `hosts/` folder directly.
 
 ## 9. Licence and provenance
 
-Published under **GPL-3.0** — see §5 for what that means and doesn't mean for a list
-of domain names.
+Licensed by file, not as a single repository-wide licence — see §5.1 for why:
+
+- `hosts/malware_domains` — **CC BY-NC-SA 4.0**, noncommercial only, preserving the
+  restriction its upstream source published.
+- `hosts/online_streaming_domains` — **CC BY-SA 4.0**, commercial use permitted.
+
+See §5.2 for what either licence does and doesn't mean for a list of domain names.
 
 Compiled and maintained by **T. Philip** — <https://github.com/t-philip>.
 Repository: <https://github.com/t-philip/blocklists>.
 `malware_domains` traces back to `mirror1.malwaredomains.com/files/justdomains`
-(no longer available).
+(DNS-BH / malwaredomains.com, RiskAnalytics; no longer available).

@@ -3,19 +3,24 @@
 Hosts-format blocklists for [Pi-hole](https://pi-hole.net), [AdGuard Home](https://adguard.com/adguard-home/overview.html),
 or any DNS-level blocker (or OS) that reads a hosts file.
 
-Licensed under [GPL-3.0](LICENSE). Please credit **t-philip** if you use or share these.
+**This repository has no single license — the two lists below are licensed
+separately, because they have different provenance.** See [LICENSE](LICENSE)
+for why, and please credit **t-philip** if you use or share either list.
 
 ---
 
 ## The lists
 
-| List | Blocks | Raw URL |
-|---|---|---|
-| **malware_domains** | Known malware, phishing and scam domains | `https://raw.githubusercontent.com/t-philip/blocklists/main/hosts/malware_domains` |
-| **online_streaming_domains** | Music and video streaming services | `https://raw.githubusercontent.com/t-philip/blocklists/main/hosts/online_streaming_domains` |
+| List | Blocks | Licence | Raw URL |
+|---|---|---|---|
+| **malware_domains** | Known malware, phishing and scam domains | [CC BY-NC-SA 4.0](LICENSES/CC-BY-NC-SA-4.0.txt) — noncommercial only | `https://raw.githubusercontent.com/t-philip/blocklists/main/hosts/malware_domains` |
+| **online_streaming_domains** | Music and video streaming services | [CC BY-SA 4.0](LICENSES/CC-BY-SA-4.0.txt) — commercial use OK | `https://raw.githubusercontent.com/t-philip/blocklists/main/hosts/online_streaming_domains` |
 
 `malware_domains` was originally built from `mirror1.malwaredomains.com/files/justdomains`,
-which is no longer available — this list exists because that source went dark.
+which is no longer available — this list exists because that source went dark. That
+source's own published terms restricted the data to noncommercial use, which is why
+this list carries that same restriction rather than a more permissive licence.
+`online_streaming_domains` is an independent compilation with no such restriction.
 
 ## Adding to Pi-hole
 

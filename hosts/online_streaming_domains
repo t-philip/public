@@ -13,6 +13,10 @@
 # Example : (^|.)spotify.com(|.$) will block spotify.com, www.spotify.com, open.spotify.com, www.spotify.com/be-fr/, guc-dealer.spotify.com
 # Example : (^|.)domain(|.*).com(|.$) will block spotify.com, www.spotify.com, open.spotify.com, www.spotify.com/be-fr/, guc-dealer.spotify.com, sp-bootstrap.spotifycdn.com
 #
+# License: CC BY-SA 4.0 -- see ../LICENSES/CC-BY-SA-4.0.txt
+# Independent compilation by T. Philip; commercial use permitted. This differs from
+# the license on this repository's other file -- see ../LICENSE.
+#
 # =================================================================
 
 # Start 
